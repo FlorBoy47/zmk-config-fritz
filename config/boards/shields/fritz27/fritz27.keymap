@@ -2,14 +2,53 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    macros {
+        k27_text: k27_text {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&kp ENTER>
+                , <&kp D>
+                , <&kp U>
+                , <&kp SPACE>
+                , <&kp M>
+                , <&kp A>
+                , <&kp C>
+                , <&kp H>
+                , <&kp S>
+                , <&kp T>
+                , <&kp SPACE>
+                , <&kp D>
+                , <&kp A>
+                , <&kp S>
+                , <&kp SPACE>
+                , <&kp S>
+                , <&kp U>
+                , <&kp P>
+                , <&kp E>
+                , <&kp R>
+                , <&kp SPACE>
+                , <&kp W>
+                , <&kp E>
+                , <&kp I>
+                , <&kp T>
+                , <&kp E>
+                , <&kp R>
+                , <&kp SPACE>
+                , <&kp S>
+                , <&kp O>
+                , <&kp ENTER>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-                &kp N1   &kp N2   &kp N3   &kp N4   &kp N5   &kp N6   &kp N7   &kp N8   &kp N9
-                &kp Q    &kp W    &kp E    &kp R    &kp T    &kp Y    &kp U    &kp I    &kp O
-                &kp A    &kp S    &kp D    &kp F    &kp G    &kp H    &kp J    &kp K    &kp L
+                &kp LA(N1)   &kp LA(N2)   &kp LA(N3)   &kp LA(N4)   &kp LA(N5)   &kp LA(N6)   &kp LA(N7)   &kp LA(N8)   &kp LA(N9)
+                &kp N1       &kp N2       &kp N3       &kp N4       &kp N5       &kp N6       &kp N7       &kp N8       &kp N9
+                &kp LSHFT    &kp LALT     &kp TAB      &kp F5       &kp F6       &kp S        &kp X        &kp C        &k27_text
             >;
         };
     };
