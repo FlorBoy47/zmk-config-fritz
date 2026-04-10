@@ -1,0 +1,9 @@
+file_format: "1"
+id: fritz27
+name: Fritz27
+type: shield
+url: https://github.com/FlorBoy47/zmk-config-fritz
+requires:
+  - nice_nano
+features:
+  - keys
